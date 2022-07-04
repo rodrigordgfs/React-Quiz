@@ -1,22 +1,20 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 import Game from "../pages/game";
-import Home from "../pages/home";
+import Start from "../pages/start";
 import Result from "../pages/result";
 
 export default function QuizView() {
   return (
     <Router>
-      <Switch>
-        <Route exat path="/">
-          <Home />
-        </Route>
-        <Route exat path="/game">
-          <Game />
-        </Route>
-        <Route exat path="/result">
-          <Result />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Start />} />
+        <Route path="/game" element={<Game />} />
+        <Route path="/result" element={<Result />} />
+      </Routes>
     </Router>
   );
 }
