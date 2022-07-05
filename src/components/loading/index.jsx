@@ -6,7 +6,7 @@ export default function Loading() {
           <div className="bg-gray-400 w-32 h-8 animate-pulse" />
           <div className="bg-gray-400 w-16 h-8 animate-pulse" />
         </div>
-        <div className="bg-gray-400 w-full h-1 animate-pulse" />
+        <div className="bg-gray-400 w-full h-2 animate-pulse" />
       </div>
       <div className="px-5 py-7 flex flex-col gap-5">
         <div className="bg-gray-400 w-full rounded-md h-6 animate-pulse" />
