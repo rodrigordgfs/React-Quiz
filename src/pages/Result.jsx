@@ -1,7 +1,7 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { AiTwotoneCrown } from "react-icons/ai";
 import Fade from "react-reveal/Fade";
-import Button from "../../components/Button";
+import Button from "../components/Button";
 
 export default function Result() {
   const location = useLocation();

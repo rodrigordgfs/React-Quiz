@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import CorrectIcon from "../CorrectIcon";
-import WrongIcon from "../WrongIcon";
+import CorrectIcon from "./CorrectIcon";
+import WrongIcon from "./WrongIcon";
 
 export default function Answer({
   question = {},

@@ -3,9 +3,9 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Game from "../pages/game";
-import Start from "../pages/start";
-import Result from "../pages/result";
+import Game from "../pages/Game";
+import Start from "../pages/Start";
+import Result from "../pages/Result";
 
 export default function QuizView() {
   return (

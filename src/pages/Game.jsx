@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import Header from "../../components/Header";
-import Question from "../../components/Question";
-import Answer from "../../components/Answer";
+import Header from "../components/Header";
+import Question from "../components/Question";
+import Answer from "../components/Answer";
 
-import QuizService from "../../services/api/quiz";
+import QuizService from "../services/api/quiz";
 
-import { errorMessage } from "../../utils/toastify";
-import Loading from "../../components/Loading";
-import Button from "../../components/Button";
+import { errorMessage } from "../utils/toastify";
+import Loading from "../components/Loading";
+import Button from "../components/Button";
 
 export default function Game() {
   const navigate = useNavigate();

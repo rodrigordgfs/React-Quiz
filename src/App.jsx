@@ -1,4 +1,4 @@
-import QuizView from "./views/quiz";
+import QuizView from "./views/Quiz";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 

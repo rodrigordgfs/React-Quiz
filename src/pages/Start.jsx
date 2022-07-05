@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Fade from "react-reveal/Fade";
-import Button from "../../components/Button";
+import Button from "../components/Button";
 
 export default function Start() {
   const navigate = useNavigate();
