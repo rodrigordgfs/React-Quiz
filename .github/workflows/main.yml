@@ -16,7 +16,7 @@ jobs:
       with:
         node-version: '12'
 
-    - name: 🔨 Build VueJS Project
+    - name: 🔨 Build React Project
       run: |
         npm install
         npm run build
