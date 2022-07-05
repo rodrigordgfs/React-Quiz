@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import Button from "../../components/Button";
 
 export default function Start() {
   const navigate = useNavigate();
@@ -9,12 +10,11 @@ export default function Start() {
 
   return (
     <div className="w-screen h-screen bg-blue-500 flex items-center justify-center">
-      <button
-        onClick={handleStartQuiz}
-        className="bg-white px-4 py-2 rounded-md font-poppins shadow-lg cursor-pointer"
-      >
-        Start Quiz
-      </button>
+      <Button
+        label="Start Quiz"
+        color="text-blue-700 bg-white hover:bg-gray-200"
+        onButtonClick={handleStartQuiz}
+      />
     </div>
   );
 }

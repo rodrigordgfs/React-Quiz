@@ -1,4 +1,8 @@
-export default function Button({ label = "", onButtonClick = null }) {
+export default function Button({
+  label = "",
+  onButtonClick = null,
+  color = "bg-blue-500 hover:bg-blue-600 text-white",
+}) {
   function handleOnButtonClick() {
     if (onButtonClick) {
       onButtonClick();
@@ -8,7 +12,7 @@ export default function Button({ label = "", onButtonClick = null }) {
   return (
     <button
       onClick={handleOnButtonClick}
-      className="bg-blue-500 hover:bg-blue-600 font-poppins text-white p-2 rounded-md shadow-md"
+      className={`${color} font-poppins p-2 rounded-md shadow-md`}
     >
       {label}
     </button>
