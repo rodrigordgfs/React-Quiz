@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { BiTimeFive } from "react-icons/bi";
+import styles from './Header.module.css';
 
 export default function Header({
   quantity = 0,
@@ -39,7 +40,7 @@ export default function Header({
           <p>{formatedCounter()}</p>
         </div>
       </div>
-      <progress max="100" value={progressCounter()} className="w-full h-2 progressbar" />
+      <progress max="100" value={progressCounter()} className={`${styles.progressbar} w-full h-2`} />
     </div>
   );
 }
